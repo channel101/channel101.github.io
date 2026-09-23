@@ -1,4 +1,4 @@
-name: Deploy MkDocs without branch
+name: Deploy MkDocs
 
 on:
   push:
