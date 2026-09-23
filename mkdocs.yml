@@ -1,0 +1,20 @@
+site_name: M
+site_dir: /
+
+theme:
+  name: landing
+
+  tagline: |
+    /channel101
+  socials:
+    - label: GitHub
+      link: https://github.com/channel101
+      icon: [brands, github]
+    - label: Github Repos
+      link: https://github.com/channel101?tab=repositories&type=source
+      icon: [solid, book-bookmark]
+  avatar: https://github.com/channel101.png
+  share_btn: false
+  avatar_size: 5rem
+  heading_font: Monoton
+  body_font: Quantico

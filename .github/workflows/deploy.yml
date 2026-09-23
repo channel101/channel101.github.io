@@ -1,0 +1,28 @@
+name: Deploy Actions 
+on:
+  push:
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+      - uses: actions/setup-python@v7
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v6
+        with:
+          key: mkdocs-landing-${{ env.cache_id }}
+          path: ~/.cache 
+          restore-keys: |
+            mkdocs-landing-
+      - run: pip install mkdocs-landing
+      - run: mkdocs gh-deploy --force
