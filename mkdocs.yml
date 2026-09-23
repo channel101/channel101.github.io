@@ -1,5 +1,4 @@
 site_name: M
-site_dir: /
 
 theme:
   name: landing
