@@ -1,3 +1,46 @@
 footer {
     display: none !important;
 }
+
+@media screen and (max-width: 768px) {
+    h1#title, h1#title a {
+        font-size: 3rem; 
+    }
+
+    content#content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    nav#toc {
+        position: static;    
+        margin-left: 0;       
+        text-align: left;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    article {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    iframe {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+    
+    header {
+        padding: 2rem 0;
+    }
+
+    footer#footer {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
