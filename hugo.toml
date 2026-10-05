@@ -1,0 +1,56 @@
+baseURL = 'https://channel101.github.io'
+title = "Welcome, Let's Meet @channel101"
+ShowBreadCrumbs = false
+ShowPostNavLinks = false
+disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
+ignoreFiles = ["(?i)docs"]
+
+[module]
+  [[module.imports]]
+      path = "github.com/cebor/vellum"
+
+[params.profile]
+  title = "channel101"
+  subtitle = "⚡ Let's Go, M!"
+  image = "profile/M.png" 
+  imageAlt = "@channel101 profile image"
+  imageWidth = 120
+
+[[params.profile.skills]]
+  name  = "Languages"
+  items = ["html", "javascript", "css"]
+
+[[params.profile.skills]]
+  name = "Learning"
+
+  [[params.profile.skills.items]]
+    name = "React & React Native"
+
+[[params.socialIcons]]
+  name = "github"           
+  url = "https://github.com/channel101"
+  title = "GitHub"  
+
+[[params.profile.projects]]
+  name        = "tclock"
+  url         = "https://github.com/treeentertainment/tclock"
+  description = "An Simple Clock Website, without any ads"
+  tags        = ["Javascript", "CSS", "HTML"]
+
+[[params.profile.projects]]
+  name        = "obs_recording_indicator"
+  url         = "https://github.com/channel101/obs_recording_indicator"
+  description = "Simple But Powerful Recording Indicator For Your OBS Studio"
+  tags        = ["Python", "Tkinter"]
+
+[outputFormats.ROOT404]
+  mediaType = "text/html"
+  baseName = "404"
+  notAlternative = true
+  root = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML"]

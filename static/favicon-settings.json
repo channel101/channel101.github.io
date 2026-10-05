@@ -1,0 +1,36 @@
+{
+  "icon": {
+    "desktop": {
+      "regularIconTransformation": {
+        "type": "background",
+        "backgroundColor": "#ffffff",
+        "backgroundRadius": 0.3,
+        "imageScale": 0.7
+      },
+      "darkIconType": "regular",
+      "darkIconTransformation": {
+        "type": "background",
+        "backgroundColor": "#000000",
+        "backgroundRadius": 0.3,
+        "imageScale": 0.7
+      }
+    },
+    "touch": {
+      "transformation": {
+        "type": "none"
+      },
+      "appTitle": "@channel101"
+    },
+    "webAppManifest": {
+      "transformation": {
+        "type": "none"
+      },
+      "backgroundColor": "#ffffff",
+      "name": "@channel101",
+      "shortName": "@channel101",
+      "themeColor": "#ffffff"
+    }
+  },
+  "path": "/assets/favicons/",
+  "skipMetadataInjection": true
+}
