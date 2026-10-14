@@ -4,7 +4,7 @@
  <a href="https://github.com/channel101">
   <img src="assets/profile/M.png"
     alt="@channel101 profile logo"
-    width="200"
+    width="150"
   />
  </a>
 </p> 
